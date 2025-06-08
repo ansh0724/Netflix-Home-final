@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+.main{
+    background-image: url("bg.jpg");
+    height: 100vh;
+    background-size: max(1200px 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main .box{
+    height: 100%;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 62px;
+}
+nav img{
+    color: rgb(229, 9, 20);
+    width: 114px;
+    height: 24;
+    position: relative;
+    z-index: 1;
+    
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child{
+    font-size: 50px;
+    font-weight: bolder;
+    filter: brightness(10);
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    filter: brightness(10);
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+.twos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 40%;
+}
+input{
+    width: 244px;
+    height: 56px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgb(20, 20, 20);
+    padding: 24px 16px;
+    border: 1px solid grey;
+}
+input::placeholder{
+    color: white;
+    opacity: 0.6;
+    font-weight: bolder;
+    font-size: 16px;
+}
+input:focus{
+    /* outline: none; */
+    border: 1px solid white;
+    color: white;
+}
+.get{
+    color: white;
+    width: 180px;
+    height: 56px;
+    padding: 0 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: red;
+}
+.get:hover{
+    background-color: rgb(229, 9, 20);
+    cursor: pointer;
+}
+.nav-two{
+    display: flex;
+    gap: 12px;
+}
+.eng{
+    width: 120px;
+    height: 32px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    font-weight: 100;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+.sin{
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 77px;
+    height: 32px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.sin:hover{
+    background-color: rgb(229, 9, 20);
+    cursor: pointer;
+}
+.first{
+    height: 100vh;
+}
+.trend{
+    position: relative;
+    height: 15vh;
+    background-color: #000;
+    display: flex;
+    align-items: flex start;
+    justify-content: center;
+}
+.trend::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(ellipse at center, rgba(229,9,20, 0.7), transparent 70%);
+    filter: blur(8px);
+    z-index: 1;
+}
+.now{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 28px;
+    top: 40px;
+    left: 15vw;
+    font-weight: 500;
+    z-index: 2;
+}
+.slider{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 4.8px 10px;
+    gap: 20px;
+    border-radius: 5px;
+}
+img{
+    border-radius: 10px;
+}
+.image{
+    height: 156.68px;
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+.number{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.main-2{
+    top: 30px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.feature{
+    height: 100vh;
+    width: 80vw;
+    display: inline-block;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 20px;
+}
+.more{
+    padding-left: 5.5vw;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+}
+.fours{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 10px ;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    height: 280px;
+}
+.one, .two, .three, .four{
+    font-size: large;
+    width: 220px;
+    height: 280px;
+    border-radius: 10%;
+    background: linear-gradient(135deg, #271368 50%, #b605b3 );
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
